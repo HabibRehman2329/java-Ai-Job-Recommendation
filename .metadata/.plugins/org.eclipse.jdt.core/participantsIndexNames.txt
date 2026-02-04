@@ -1,0 +1,11 @@
+INDEX VERSION 1.134
+C:\AI-Powered Job Role Recommendation System using Ai\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\228348631.index
+\AI-Job-Recommendation-System\src\main\java
+C:\AI-Powered Job Role Recommendation System using Ai\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1175827571.index
+\AI_Powered_Job_Role_Recommendation\src\main\java
+C:\AI-Powered Job Role Recommendation System using Ai\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\186157852.index
+\AI-Job-Recommendation-System\src\main\java
+C:\AI-Powered Job Role Recommendation System using Ai\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4209924371.index
+\AI-Job-Recommendation-System\src\main\java
+C:\AI-Powered Job Role Recommendation System using Ai\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2719949302.index
+\AI_Powered_Job_Role_Recommendation\src\main\java

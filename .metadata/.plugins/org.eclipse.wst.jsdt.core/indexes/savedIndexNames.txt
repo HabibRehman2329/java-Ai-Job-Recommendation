@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\AI-Powered Job Role Recommendation System using Ai\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1019824756.index
+2719949302.index
+3697160998.index
+3842019965.index
+455477364.index
+2836901394.index
+825743537.index

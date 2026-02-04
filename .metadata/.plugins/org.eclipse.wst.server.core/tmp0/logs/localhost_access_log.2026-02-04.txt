@@ -1,0 +1,9 @@
+127.0.0.1 - - [04/Feb/2026:11:56:18 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [04/Feb/2026:11:56:19 +0530] "GET /AI_Powered_Job_Role_Recommendation/ HTTP/1.1" 200 2473
+0:0:0:0:0:0:0:1 - - [04/Feb/2026:11:56:19 +0530] "GET /AI_Powered_Job_Role_Recommendation/assets/images/job.png HTTP/1.1" 200 31072
+0:0:0:0:0:0:0:1 - - [04/Feb/2026:11:56:19 +0530] "GET /AI_Powered_Job_Role_Recommendation/css/style.css HTTP/1.1" 200 14073
+0:0:0:0:0:0:0:1 - - [04/Feb/2026:11:56:20 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [04/Feb/2026:11:56:24 +0530] "GET /AI_Powered_Job_Role_Recommendation/jsp/login.jsp HTTP/1.1" 200 1128
+0:0:0:0:0:0:0:1 - - [04/Feb/2026:11:57:01 +0530] "POST /AI_Powered_Job_Role_Recommendation/login HTTP/1.1" 200 1252
+0:0:0:0:0:0:0:1 - - [04/Feb/2026:11:57:03 +0530] "GET /AI_Powered_Job_Role_Recommendation/jsp/skill-input.jsp HTTP/1.1" 200 1351
+0:0:0:0:0:0:0:1 - - [04/Feb/2026:11:57:06 +0530] "GET /AI_Powered_Job_Role_Recommendation/history HTTP/1.1" 200 9479

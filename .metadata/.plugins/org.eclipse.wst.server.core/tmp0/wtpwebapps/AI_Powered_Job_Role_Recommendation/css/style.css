@@ -1,0 +1,718 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-left h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.hero-left p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 520px;
+    opacity: 0.9;
+}
+.nav-links a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full screen */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* App container */
+.app-container {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #0f2027 0%, #132c35 50%, #0b1f26 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Navbar */
+.navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* HERO SECTION */
+.hero {
+    flex: 1;
+    display: flex;
+    padding: 60px;
+}
+
+/* Left side */
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-left h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 1.2rem;
+    max-width: 500px;
+}
+
+/* Right side */
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 80%;
+    height: 60%;
+    border: 2px dashed white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* Primary button */
+.primary-btn {
+    background-color: #00d4ff;
+    color: #000;
+}
+
+/* Secondary button */
+.secondary-btn {
+    border: 1px solid #00d4ff;
+    color: #00d4ff;
+}
+/* Navbar polish */
+.nav-links a {
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #00d4ff;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00d4ff;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+.hero-image {
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+}
+
+/* ================= FEATURES SECTION ================= */
+
+.features {
+    padding: 80px 60px;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.features-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 30px 25px;
+    border-radius: 12px;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 1024px) {
+    .features-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-left h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-right {
+        margin-top: 40px;
+    }
+
+    .features {
+        padding: 60px 20px;
+    }
+
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* ================= SAFE LOGIN UI POLISH ================= */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    max-width: 420px;
+    padding: 40px;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.login-desc {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.login-error {
+    color: #e53935;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+/* ================= LOGIN PAGE PREMIUM POLISH ================= */
+
+/* Match homepage background */
+.login-page {
+    background: linear-gradient(135deg, #0f2027 0%, #132c35 50%, #0b1f26 100%);
+}
+
+/* Glassmorphism card */
+.login-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+/* Headings */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-desc {
+    color: #ccc;
+}
+
+/* Inputs */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    background: rgba(255, 255, 255, 0.9);
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.login-container input:focus {
+    box-shadow: 0 0 0 2px #00d4ff;
+}
+
+/* Button */
+.login-container input[type="submit"] {
+    background: #00d4ff;
+    color: #000;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.login-container input[type="submit"]:hover {
+    background: #00b8e6;
+    transform: translateY(-1px);
+}
+
+/* Register link */
+.login-footer a,
+.nav a {
+    color: #00d4ff;
+}
+/* ================= DASHBOARD (LOGIN SUCCESS) ================= */
+
+.dashboard-container {
+    max-width: 900px;
+    padding: 50px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+}
+
+.dashboard-desc {
+    margin: 15px 0 40px;
+    color: #ccc;
+    font-size: 1.05rem;
+}
+
+/* Cards */
+.dashboard-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.dashboard-card {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 30px 20px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.dashboard-card p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* Logout */
+.dashboard-logout {
+    margin-top: 35px;
+}
+
+.dashboard-logout a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* ================= AI SKILL INPUT ================= */
+
+.ai-container {
+    max-width: 700px;
+    padding: 50px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+}
+
+.ai-desc {
+    margin: 15px 0 35px;
+    color: #ccc;
+    font-size: 1.05rem;
+}
+
+.ai-container input[type="text"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.ai-container input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    background: #00d4ff;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.ai-container input[type="submit"]:hover {
+    background: #00b8e6;
+    transform: translateY(-1px);
+}
+/* ================= FULL WIDTH AI DASHBOARD ================= */
+
+.ai-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 40px;
+    color: #fff;
+}
+
+.ai-page h2 {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.ai-desc {
+    text-align: center;
+    color: #ccc;
+    margin: 15px auto 40px;
+    max-width: 700px;
+    font-size: 1.05rem;
+}
+
+/* FORM */
+.ai-form {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    background: rgba(255,255,255,0.08);
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
+
+.ai-form label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ai-form input[type="text"] {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+.ai-form input[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    background: #00d4ff;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.ai-form input[type="submit"]:hover {
+    background: #00b8e6;
+    transform: translateY(-2px);
+}
+
+/* ACTION CARDS */
+.ai-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.ai-card {
+    background: rgba(0,0,0,0.45);
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ai-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+}
+
+.ai-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.ai-card p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+.logout-card {
+    border: 1px solid #ff6b6b;
+}
+/* ================= SKILL RESULT PAGE ================= */
+
+.result-section {
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.result-section h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Skill badge */
+.skill-badge {
+    background: rgba(0, 212, 255, 0.15);
+    border-left: 5px solid #00d4ff;
+    padding: 16px 22px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #e6faff;
+}
+
+/* AI result box */
+.ai-result-box {
+    white-space: pre-line;   /* 🔥 VERY IMPORTANT */
+    background: rgba(0, 0, 0, 0.45);
+    padding: 30px;
+    border-radius: 18px;
+    line-height: 1.8;
+    font-size: 1rem;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
+    color: #fff;
+}
+/* ================= RESUME RESULT PAGE ================= */
+
+.result-section {
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.result-section h3 {
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+}
+
+/* AI RESULT BOX */
+.ai-result-box {
+    white-space: pre-line; /* 🔥 CRITICAL: keeps AI formatting */
+    background: rgba(0, 0, 0, 0.45);
+    padding: 32px;
+    border-radius: 18px;
+    line-height: 1.8;
+    font-size: 1rem;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
+    color: #ffffff;
+}
+/* ================= CLEAN FILE INPUT ================= */
+
+.ai-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.ai-form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.95);
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+/* Fix collapsed native button */
+.ai-form input[type="file"]::-webkit-file-upload-button {
+    background: #0fd3ff;
+    color: #000;
+    border: none;
+    padding: 10px 16px;
+    margin-right: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ai-form input[type="file"]::-webkit-file-upload-button:hover {
+    background: #00b8e6;
+}
+
+/* Firefox */
+.ai-form input[type="file"]::file-selector-button {
+    background: #0fd3ff;
+    color: #000;
+    border: none;
+    padding: 10px 16px;
+    margin-right: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ai-form input[type="file"]::file-selector-button:hover {
+    background: #00b8e6;
+}
+/* ================= AI HISTORY ================= */
+
+.history-table-wrapper {
+    margin-top: 40px;
+    overflow-x: auto;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.history-table th,
+.history-table td {
+    padding: 16px 18px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.history-table th {
+    background: rgba(0, 212, 255, 0.2);
+    font-weight: 600;
+}
+
+.history-table tr:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.history-result {
+    white-space: pre-line; /* 🔥 CRITICAL for AI text */
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #eaeaea;
+}
+/* ================= HISTORY PAGE SPACING FIX ================= */
+
+/* Add space BELOW history table */
+.history-table-wrapper {
+    margin-bottom: 70px; /* ⬅️ THIS creates clean gap */
+}
+
+/* Ensure action cards are spaced nicely */
+.ai-actions {
+    margin-top: 40px;    /* ⬅️ pushes cards down */
+}
+
+/* Optional: slightly increase card spacing */
+.ai-actions {
+    gap: 32px;
+}
+
+/* ================= FILE NAME VISIBILITY FIX ================= */
+
+.ai-form input[type="file"] {
+    color: #000; /* 🔥 ensures filename is visible */
+}
+
+/* Chrome / Edge */
+.ai-form input[type="file"]::-webkit-file-upload-button {
+    color: #000;
+}
+
+/* Firefox */
+.ai-form input[type="file"]::file-selector-button {
+    color: #000;
+}
+

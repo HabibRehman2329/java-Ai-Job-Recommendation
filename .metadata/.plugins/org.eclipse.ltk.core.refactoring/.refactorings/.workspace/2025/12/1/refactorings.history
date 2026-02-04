@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;AI-Job-Recommendation-System&apos;" deleteContents="true" description="Delete resource &apos;AI-Job-Recommendation-System&apos;" element1="/AI-Job-Recommendation-System" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1767166584395"/>
+</session>
